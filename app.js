@@ -4,7 +4,7 @@ const db = require('./database/connection');
 const Coffee = require('./models/Coffee');
 const Review = require('./models/Review');
 const morgan = require('morgan');
-// Configuración para servir archivos estáticos desde el directorio 'public'
+const port = process.env.PORT || 3000;
 app.use(express.static('public'));
 app.use(express.json());
 app.use(morgan('dev'));
@@ -72,6 +72,7 @@ app.get('/testimonial', (req, res) => {
     res.render('testimonial.ejs', { nombre: 'Usuario EJS' });
 });
 
-app.listen(3000, () => {
-    console.log('Servidor listening on port 3000');
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

@@ -1,0 +1,250 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title KOPPEE - Coffee Shop HTML Template
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="keywords", content="Free Website Template")
+    meta(name="description", content="Free Website Template")
+    // Favicon
+    link(rel="icon", href="img/favicon.ico")
+    // Google Font
+    link(rel="preconnect", href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap", rel="stylesheet")
+    // Font Awesome
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css", rel="stylesheet")
+    // Libraries Stylesheet
+    link(href="lib/owlcarousel/assets/owl.carousel.min.css", rel="stylesheet")
+    link(href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css", rel="stylesheet")
+    // Customized Bootstrap Stylesheet
+    link(href="css/style.min.css", rel="stylesheet")
+  body
+    // Navbar Start
+    .container-fluid.p-0.nav-bar
+      nav.navbar.navbar-expand-lg.bg-none.navbar-dark.py-3
+        a.navbar-brand.px-lg-4.m-0(href="index.html")
+          h1.m-0.display-4.text-uppercase.text-white KOPPEE
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarCollapse")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse.justify-content-between#navbarCollapse
+          .navbar-nav.ml-auto.p-4
+            a.nav-item.nav-link.active(href="index") Home
+            a.nav-item.nav-link(href="about") About
+            a.nav-item.nav-link(href="service") Service
+            a.nav-item.nav-link(href="menu") Menu
+    // Navbar End
+    
+    // Carousel Start
+    .container-fluid.p-0.mb-5
+      #blog-carousel.carousel.slide.overlay-bottom(data-ride="carousel")
+        .carousel-inner
+          .carousel-item.active
+            img.w-100(src="img/carousel-1.jpg", alt="Image")
+            .carousel-caption.d-flex.flex-column.align-items-center.justify-content-center
+              h2.text-primary.font-weight-medium.m-0 We Have Been Serving
+              h1.display-1.text-white.m-0 COFFEE
+              h2.text-white.m-0 * SINCE 1950 *
+          .carousel-item
+            img.w-100(src="img/carousel-2.jpg", alt="Image")
+            .carousel-caption.d-flex.flex-column.align-items-center.justify-content-center
+              h2.text-primary.font-weight-medium.m-0 We Have Been Serving
+              h1.display-1.text-white.m-0 COFFEE
+              h2.text-white.m-0 * SINCE 1950 *
+        a.carousel-control-prev(href="#blog-carousel", data-slide="prev")
+          span.carousel-control-prev-icon
+        a.carousel-control-next(href="#blog-carousel", data-slide="next")
+          span.carousel-control-next-icon
+    // Carousel End
+    // About Start
+    .container-fluid.py-5
+      .container
+        .section-title
+          h4.text-primary.text-uppercase(style="letter-spacing: 5px;") About Us
+          h1.display-4 Serving Since 1950
+        .row
+          .col-lg-4.py-0.py-lg-5
+            h1.mb-3 Our Story
+            h5.mb-3 Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet sed vero dolor sea
+            p Takimata sed vero vero no sit sed, justo clita duo no duo amet et, nonumy kasd sed dolor eos diam lorem eirmod. Amet sit amet amet no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit ut. Labor diam sed ipsum et eirmod
+            a.btn.btn-secondary.font-weight-bold.py-2.px-4.mt-2(href="") Learn More
+          .col-lg-4.py-5.py-lg-0(style="min-height: 500px;")
+            .position-relative.h-100
+              img.position-absolute.w-100.h-100(src="img/about.png", style="object-fit: cover;")
+          .col-lg-4.py-0.py-lg-5
+            h1.mb-3 Our Vision
+            p Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor
+            h5.mb-3
+              i.fa.fa-check.text-primary.mr-3
+              | Lorem ipsum dolor sit amet
+            h5.mb-3
+              i.fa.fa-check.text-primary.mr-3
+              | Lorem ipsum dolor sit amet
+            h5.mb-3
+              i.fa.fa-check.text-primary.mr-3
+              | Lorem ipsum dolor sit amet
+            a.btn.btn-primary.font-weight-bold.py-2.px-4.mt-2(href="") Learn More
+    // About End
+    // Service Start
+    .container-fluid.pt-5
+      .container
+        .section-title
+          h4.text-primary.text-uppercase(style="letter-spacing: 5px;") Our Services
+          h1.display-4 Fresh & Organic Beans
+        .row
+          .col-lg-6.mb-5
+            .row.align-items-center
+              .col-sm-5
+                img.img-fluid.mb-3.mb-sm-0(src="img/service-1.jpg", alt="")
+              .col-sm-7
+                h4
+                  i.fa.fa-truck.service-icon
+                  | Fastest Door Delivery
+                p.m-0 Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor
+          .col-lg-6.mb-5
+            .row.align-items-center
+              .col-sm-5
+                img.img-fluid.mb-3.mb-sm-0(src="img/service-2.jpg", alt="")
+              .col-sm-7
+                h4
+                  i.fa.fa-coffee.service-icon
+                  | Fresh Coffee Beans
+                p.m-0 Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor
+          .col-lg-6.mb-5
+            .row.align-items-center
+              .col-sm-5
+                img.img-fluid.mb-3.mb-sm-0(src="img/service-3.jpg", alt="")
+              .col-sm-7
+                h4
+                  i.fa.fa-award.service-icon
+                  | Best Quality Coffee
+                p.m-0 Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor
+          .col-lg-6.mb-5
+            .row.align-items-center
+              .col-sm-5
+                img.img-fluid.mb-3.mb-sm-0(src="img/service-4.jpg", alt="")
+              .col-sm-7
+                h4
+                  i.fa.fa-table.service-icon
+                  | Online Table Booking
+                p.m-0 Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor
+    // Service End
+
+    // Reservation Start
+    .container-fluid.my-5
+      .container
+        .reservation.position-relative.overlay-top.overlay-bottom
+          .row.align-items-center
+            .col-lg-6.my-5.my-lg-0
+              .p-5
+                .mb-4
+                  h1.display-3.text-primary 30% OFF
+                  h1.text-white For Online Reservation
+                p.text-white Lorem justo clita erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea
+                ul.list-inline.text-white.m-0
+                  li.py-2
+                    i.fa.fa-check.text-primary.mr-3
+                    | Lorem ipsum dolor sit amet
+                  li.py-2
+                    i.fa.fa-check.text-primary.mr-3
+                    | Lorem ipsum dolor sit amet
+                  li.py-2
+                    i.fa.fa-check.text-primary.mr-3
+                    | Lorem ipsum dolor sit amet
+            .col-lg-6
+              .text-center.p-5(style="background: rgba(51, 33, 29, .8);")
+                h1.text-white.mb-4.mt-5 Book Your Table
+                <form method="POST" action="/reviews" enctype="application/x-www-form-urlencoded">
+                  .form-group
+                    input.form-control.bg-transparent.border-primary.p-4(type="text", name="name", placeholder="Name", required="required", value="")
+                  .form-group
+                    input.form-control.bg-transparent.border-primary.p-4(type="text", name="profession", placeholder="Profession", required="required", value="")
+                  .form-group
+                    textarea.form-control.bg-transparent.border-primary.p-4(name="comment", placeholder="Your Review", rows="5", required="required", value="")
+                  div
+                    button.btn.btn-primary.btn-block.font-weight-bold.py-3(type="submit") Submit Review
+    // Reservation End
+
+    
+    // Testimonial Start
+    .container-fluid.py-5
+      .container
+        .section-title
+          h4.text-primary.text-uppercase(style="letter-spacing: 5px;") Testimonial
+          h1.display-4 Our Clients Say
+        .owl-carousel.testimonial-carousel
+          each review in reviews
+            .testimonial-item
+              .d-flex.align-items-center.mb-3
+                // Aquí supongo que tienes un campo de imagen en tu modelo de revisión
+                img.img-fluid(src=review.image, alt="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/330px-User_icon_2.svg.png")
+                div.ml-3
+                  h4= review.name
+                  i= review.profession
+              p.m-0= review.comment
+    // Testimonial End
+
+    // Footer Start
+    .container-fluid.footer.text-white.mt-5.pt-5.px-0.position-relative.overlay-top
+      .row.mx-0.pt-5.px-sm-3.px-lg-5.mt-4
+        .col-lg-3.col-md-6.mb-5
+          h4.text-white.text-uppercase.mb-4(style="letter-spacing: 3px;") Get In Touch
+          p
+            i.fa.fa-map-marker-alt.mr-2
+            | 123 Street, New York, USA
+          p
+            i.fa.fa-phone-alt.mr-2
+            | +012 345 67890
+          p.m-0
+            i.fa.fa-envelope.mr-2
+            | info@example.com
+        .col-lg-3.col-md-6.mb-5
+          h4.text-white.text-uppercase.mb-4(style="letter-spacing: 3px;") Follow Us
+          p Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum
+          .d-flex.justify-content-start
+            a.btn.btn-lg.btn-outline-light.btn-lg-square.mr-2(href="#")
+              i.fab.fa-twitter
+            a.btn.btn-lg.btn-outline-light.btn-lg-square.mr-2(href="#")
+              i.fab.fa-facebook-f
+            a.btn.btn-lg.btn-outline-light.btn-lg-square.mr-2(href="#")
+              i.fab.fa-linkedin-in
+            a.btn.btn-lg.btn-outline-light.btn-lg-square(href="#")
+              i.fab.fa-instagram
+        .col-lg-3.col-md-6.mb-5
+          h4.text-white.text-uppercase.mb-4(style="letter-spacing: 3px;") Open Hours
+          div
+            h6.text-white.text-uppercase Monday - Friday
+            p 8.00 AM - 8.00 PM
+            h6.text-white.text-uppercase Saturday - Sunday
+            p 2.00 PM - 8.00 PM
+        .col-lg-3.col-md-6.mb-5
+          h4.text-white.text-uppercase.mb-4(style="letter-spacing: 3px;") Newsletter
+          p Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum
+          .w-100
+            .input-group
+              input.form-control.border-light(style="padding: 25px;", placeholder="Your Email", type="text")
+              div.input-group-append
+                button.btn.btn-primary.font-weight-bold.px-3 Sign Up
+      .container-fluid.text-center.text-white.border-top.mt-4.py-4.px-sm-3.px-md-5(style="border-color: rgba(256, 256, 256, .1) !important;")
+        p.mb-2.text-white Copyright ©
+          a.font-weight-bold(href="#") Domain
+          | . All Rights Reserved.
+        p.m-0.text-white Designed by
+          a.font-weight-bold(href="https://htmlcodex.com") HTML Codex
+    // Footer End
+    // Back to Top
+    a.btn.btn-lg.btn-primary.btn-lg-square.back-to-top(href="#")
+      i.fa.fa-angle-double-up
+    // JavaScript Libraries
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js")
+    script(src="lib/easing/easing.min.js")
+    script(src="lib/waypoints/waypoints.min.js")
+    script(src="lib/owlcarousel/owl.carousel.min.js")
+    script(src="lib/tempusdominus/js/moment.min.js")
+    script(src="lib/tempusdominus/js/moment-timezone.min.js")
+    script(src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js")
+    // Contact Javascript File
+    script(src="mail/jqBootstrapValidation.min.js")
+    script(src="mail/contact.js")
+    // Template Javascript
+    script(src="js/main.js")

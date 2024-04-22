@@ -1,0 +1,126 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title KOPPEE - Coffee Shop HTML Template
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="keywords", content="Free Website Template")
+    meta(name="description", content="Free Website Template")
+    // Favicon
+    link(href="/img/favicon.ico", rel="icon")
+    // Google Font
+    link(rel="preconnect", href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap", rel="stylesheet")
+    // Font Awesome
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css", rel="stylesheet")
+    // Libraries Stylesheet
+    link(href="/lib/owlcarousel/assets/owl.carousel.min.css", rel="stylesheet")
+    link(href="/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css", rel="stylesheet")
+    // Customized Bootstrap Stylesheet
+    link(href="/css/style.min.css", rel="stylesheet")
+  body
+    // Navbar Start
+    .container-fluid.p-0.nav-bar
+      nav.navbar.navbar-expand-lg.bg-none.navbar-dark.py-3
+        a.navbar-brand.px-lg-4.m-0(href="/")
+          h1.m-0.display-4.text-uppercase.text-white KOPPEE
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarCollapse")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse.justify-content-between#navbarCollapse
+          .navbar-nav.ml-auto.p-4
+            a.nav-item.nav-link(href="/") Home
+            a.nav-item.nav-link(href="/about") About
+            a.nav-item.nav-link(href="/service") Service
+            a.nav-item.nav-link.active(href="/menu") Menu
+            div.nav-item.dropdown
+              a.nav-link.dropdown-toggle(href="#", data-toggle="dropdown") Pages
+              .dropdown-menu.text-capitalize
+                a.dropdown-item(href="/reservation") Reservation
+                a.dropdown-item(href="/testimonial") Testimonial
+            a.nav-item.nav-link(href="/contact") Contact
+    // Navbar End
+    // Page Header Start
+    .container-fluid.page-header.mb-5.position-relative.overlay-bottom
+      .d-flex.flex-column.align-items-center.justify-content-center.pt-0.pt-lg-5(style="min-height: 400px")
+        h1.display-4.mb-3.mt-0.mt-lg-5.text-white.text-uppercase Menu
+        .d-inline-flex.mb-lg-5
+          p.m-0.text-white
+            a.text-white(href="/") Home
+          p.m-0.text-white.px-2 /
+          p.m-0.text-white Menu
+    // Page Header End
+// Menu Start
+.container-fluid.pt-5
+  .container
+    .section-title
+      h4.text-primary.text-uppercase(style="letter-spacing: 5px;") Menu & Pricing
+      h1.display-4 Competitive Pricing
+    .row
+      each coffee in coffees
+        .col-lg-6.mb-4
+          .card.border-0.shadow-sm
+            .row.no-gutters.align-items-center
+              .col-md-4
+                img.card-img-top(src=coffee.image ? coffee.image : 'https://wpdirecto.com/wp-content/uploads/2017/08/alt-de-una-imagen.png.jpg', alt=coffee.name)
+              .col-md-8
+                .card-body
+                  h5.card-title.text-uppercase.mb-3 #{coffee.name}
+                  p.card-text.mb-2 Description: #{coffee.description}
+                  p.card-text.mb-2 Price: $#{coffee.price}
+                  if coffee.available
+                    p.card-text.mb-2 Availability: Available
+                  else
+                    p.card-text.mb-2 Availability: Not Available
+
+    // Menu End
+    // Footer Start
+    .container-fluid.footer.text-white.mt-5.pt-5.px-0.position-relative.overlay-top
+      .row.mx-0.pt-5.px-sm-3.px-lg-5.mt-4
+        .col-lg-3.col-md-6.mb-5
+          h4.text-white.text-uppercase.mb-4(style="letter-spacing: 3px;") Get In Touch
+          p
+            i.fa.fa-map-marker-alt.mr-2
+            | 123 Street, New York, USA
+          p
+            i.fa.fa-phone-alt.mr-2
+            | +012 345 67890
+          p.m-0
+            i.fa.fa-envelope.mr-2
+            | info@example.com
+        .col-lg-3.col-md-6.mb-5
+          h4.text-white.text-uppercase.mb-4(style="letter-spacing: 3px;") Follow Us
+          p Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum
+          .d-flex.justify-content-start
+            a.btn.btn-lg.btn-outline-light.btn-lg-square.mr-2(href="#")
+              i.fab.fa-twitter
+            a.btn.btn-lg.btn-outline-light.btn-lg-square.mr-2(href="#")
+              i.fab.fa-facebook-f
+            a.btn.btn-lg.btn-outline-light.btn-lg-square.mr-2(href="#")
+              i.fab.fa-linkedin-in
+            a.btn.btn-lg.btn-outline-light.btn-lg-square(href="#")
+              i.fab.fa-instagram
+        .col-lg-3.col-md-6.mb-5
+          h4.text-white.text-uppercase.mb-4(style="letter-spacing: 3px;") Open Hours
+          div
+            h6.text-white.text-uppercase Monday - Friday
+            p 8.00 AM - 8.00 PM
+            h6.text-white.text-uppercase Saturday - Sunday
+            p 2.00 PM - 8.00 PM
+        .col-lg-3.col-md-6.mb-5
+          h4.text-white.text-uppercase.mb-4(style="letter-spacing: 3px;") Newsletter
+          p Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum
+          .w-100
+            .input-group
+              input.form-control.border-light(style="padding: 25px;", type="text", placeholder="Your Email")
+              .input-group-append
+                button.btn.btn-primary.font-weight-bold.px-3 Sign Up
+      .container-fluid.text-center.text-white.border-top.mt-4.py-4.px-sm-3.px-md-5(style="border-color: rgba(256, 256, 256, .1) !important;")
+        p.mb-2.text-white Copyright &copy;
+          a.font-weight-bold(href="#") Domain
+          | . All Rights Reserved.
+        p.m-0.text-white Designed by
+          a.font-weight-bold(href="https://htmlcodex.com") HTML Codex
+    // Footer End
+    // Back to Top
+    a.btn.btn-lg.btn-primary.btn-lg-square.back-to-top(href="#")
+      i.fa.fa-angle-double-up

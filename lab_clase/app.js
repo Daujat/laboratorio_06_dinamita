@@ -76,4 +76,4 @@ app.listen(3000, () => {
   console.log('Aplicación web dinámica ejecutándose en el puerto 3000');
 });
 
-//ya ahora sí
+//:v

@@ -59,11 +59,11 @@ html(lang="en")
     .container-fluid.py-5
       .container
         .section-title
-          h4.text-primary.text-uppercase(style="letter-spacing: 5px;") About Us
-          h1.display-4 Serving Since 1950
+          h4.text-primary.text-uppercase(style="letter-spacing: 5px;") Sobre nosotros
+          h1.display-4 Sirviendo desde 1950
         .row
           .col-lg-4.py-0.py-lg-5
-            h1.mb-3 Our Story
+            h1.mb-3 Nuestra historia
             h5.mb-3 Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet sed vero dolor sea
             p Takimata sed vero vero no sit sed, justo clita duo no duo amet et, nonumy kasd sed dolor eos diam lorem eirmod. Amet sit amet amet no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit ut. Labor diam sed ipsum et eirmod
             a.btn.btn-secondary.font-weight-bold.py-2.px-4.mt-2(href="") Learn More
@@ -71,7 +71,7 @@ html(lang="en")
             .position-relative.h-100
               img.position-absolute.w-100.h-100(src="img/about.png", style="object-fit: cover;")
           .col-lg-4.py-0.py-lg-5
-            h1.mb-3 Our Vision
+            h1.mb-3 Nuestra visión
             p Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor
             h5.mb-3
               i.fa.fa-check.text-primary.mr-3
@@ -88,8 +88,8 @@ html(lang="en")
     .container-fluid.pt-5
       .container
         .section-title
-          h4.text-primary.text-uppercase(style="letter-spacing: 5px;") Our Services
-          h1.display-4 Fresh & Organic Beans
+          h4.text-primary.text-uppercase(style="letter-spacing: 5px;") Nuestros servicios
+          h1.display-4 Café y Fresco Orgánico
         .row
           .col-lg-6.mb-5
             .row.align-items-center
@@ -98,7 +98,7 @@ html(lang="en")
               .col-sm-7
                 h4
                   i.fa.fa-truck.service-icon
-                  | Fastest Door Delivery
+                  | Entrega a puerta más rápida
                 p.m-0 Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor
           .col-lg-6.mb-5
             .row.align-items-center
@@ -107,7 +107,7 @@ html(lang="en")
               .col-sm-7
                 h4
                   i.fa.fa-coffee.service-icon
-                  | Fresh Coffee Beans
+                  | Granos de café frescos
                 p.m-0 Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor
           .col-lg-6.mb-5
             .row.align-items-center
@@ -116,7 +116,7 @@ html(lang="en")
               .col-sm-7
                 h4
                   i.fa.fa-award.service-icon
-                  | Best Quality Coffee
+                  | Café de la mejor calidad
                 p.m-0 Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor
           .col-lg-6.mb-5
             .row.align-items-center
@@ -125,7 +125,7 @@ html(lang="en")
               .col-sm-7
                 h4
                   i.fa.fa-table.service-icon
-                  | Online Table Booking
+                  | Reserva de mesa en línea
                 p.m-0 Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor
     // Service End
 
@@ -137,8 +137,8 @@ html(lang="en")
             .col-lg-6.my-5.my-lg-0
               .p-5
                 .mb-4
-                  h1.display-3.text-primary 30% OFF
-                  h1.text-white For Online Reservation
+                  h1.display-3.text-primary Agrega
+                  h1.text-white Tu comentario online
                 p.text-white Lorem justo clita erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea
                 ul.list-inline.text-white.m-0
                   li.py-2
@@ -152,16 +152,17 @@ html(lang="en")
                     | Lorem ipsum dolor sit amet
             .col-lg-6
               .text-center.p-5(style="background: rgba(51, 33, 29, .8);")
-                h1.text-white.mb-4.mt-5 Book Your Table
+                h1.text-white.mb-4.mt-5 Agregar un comentario a Nuestra página 
                 <form method="POST" action="/reviews" enctype="application/x-www-form-urlencoded">
                   .form-group
-                    input.form-control.bg-transparent.border-primary.p-4(type="text", name="name", placeholder="Name", required="required", value="")
+                    input.form-control.border-primary.p-4(type="text", name="name", placeholder="Name", required="required", value="")
                   .form-group
-                    input.form-control.bg-transparent.border-primary.p-4(type="text", name="profession", placeholder="Profession", required="required", value="")
+                    input.form-control.border-primary.p-4(type="text", name="profession", placeholder="Profession", required="required", value="")
                   .form-group
-                    textarea.form-control.bg-transparent.border-primary.p-4(name="comment", placeholder="Your Review", rows="5", required="required", value="")
+                    textarea.form-control.border-primary.p-4(name="comment", placeholder="Your Review", rows="5", required="required", value="")
                   div
-                    button.btn.btn-primary.btn-block.font-weight-bold.py-3(type="submit") Submit Review
+                    button.btn.btn-primary.btn-block.font-weight-bold.py-3(type="submit") Agrega tu comentario
+
     // Reservation End
 
     
@@ -170,7 +171,7 @@ html(lang="en")
       .container
         .section-title
           h4.text-primary.text-uppercase(style="letter-spacing: 5px;") Testimonial
-          h1.display-4 Our Clients Say
+          h1.display-4 Nuestros clientes dicen
         .owl-carousel.testimonial-carousel
           each review in reviews
             .testimonial-item

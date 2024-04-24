@@ -28,10 +28,10 @@ html(lang="en")
           span.navbar-toggler-icon
         .collapse.navbar-collapse.justify-content-between#navbarCollapse
           .navbar-nav.ml-auto.p-4
-            a.nav-item.nav-link.active(href="index") Home
-            a.nav-item.nav-link(href="about") About
-            a.nav-item.nav-link(href="service") Service
-            a.nav-item.nav-link(href="menu") Menu
+            a.nav-item.nav-link.active(href="index") Principal
+            a.nav-item.nav-link(href="about") Sobre nosotros
+            a.nav-item.nav-link(href="service") Servicios
+            a.nav-item.nav-link(href="menu") Menú
     // Navbar End
     
     // Carousel Start
@@ -155,11 +155,11 @@ html(lang="en")
                 h1.text-white.mb-4.mt-5 Agregar un comentario a Nuestra página 
                 <form method="POST" action="/reviews" enctype="application/x-www-form-urlencoded">
                   .form-group
-                    input.form-control.border-primary.p-4(type="text", name="name", placeholder="Name", required="required", value="")
+                    input.form-control.border-primary.p-4(type="text", name="name", placeholder="Nombre", required="required", value="")
                   .form-group
-                    input.form-control.border-primary.p-4(type="text", name="profession", placeholder="Profession", required="required", value="")
+                    input.form-control.border-primary.p-4(type="text", name="profession", placeholder="Profesión", required="required", value="")
                   .form-group
-                    textarea.form-control.border-primary.p-4(name="comment", placeholder="Your Review", rows="5", required="required", value="")
+                    textarea.form-control.border-primary.p-4(name="comment", placeholder="Tu Comentario", rows="5", required="required", value="")
                   div
                     button.btn.btn-primary.btn-block.font-weight-bold.py-3(type="submit") Agrega tu comentario
 
